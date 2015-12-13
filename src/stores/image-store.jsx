@@ -4,14 +4,14 @@ var Actions = require('../actions');
 
 module.exports = Reflux.createStore({
     listenables: [Actions],
-    getTopics: function () {
-        return Api.get('topics/defaults')
+    getImages: function (topicId) {
+        return Api.get('topics/' + topicId)
             .then(function (json) {
-                this.topics = json.data;
+                this.images = json.data;
                 this.triggerChange();
-        }.bind(this));
+            }.bind(this));
     },
     triggerChange: function () {
-        this.trigger('change', this.topics);
+        this.trigger('change', this.images);
     }
 });
