@@ -23,7 +23,8 @@
     "reflux": "^0.3.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^2.4.0",
-    "whatwg-fetch": "^0.10.1"
+    "whatwg-fetch": "^0.10.1",
+    "lodash": "~3.10.1"
   },
   "devDependencies": {}
 }

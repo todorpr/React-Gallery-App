@@ -1,0 +1,15 @@
+.image-detail {
+  .panel-body {
+    text-align: center;
+  }
+
+  img, video {
+    width: 100%;
+  }
+}
+
+//$class-slug: level !default;
+//
+//@for $i from 0 through 10
+//.#{$class-slug}-#{$i * 10}
+//margin-left: 0px + $i
