@@ -17,7 +17,7 @@ module.exports = React.createClass({
     componentWillMount: function () {
         Actions.getTopics();
     },
-    render: function() {
+    render: function() {        
         return <div className="list-group">
             {this.renderTopics()}
         </div>

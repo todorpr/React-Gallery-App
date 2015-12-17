@@ -52,7 +52,7 @@ module.exports = React.createClass({
     },
     renderImage: function () {
         if(this.state.image.animated){
-            return <video preload="auto" autoplay="autoplay" loop="loop" webkit-playsinline>
+            return <video preload="auto" autoPlay="autoplay" loop="loop" webkit-playsinline>
                 <source src={this.state.image.mp4} type="video/mp4"></source>
             </video>
         } else {

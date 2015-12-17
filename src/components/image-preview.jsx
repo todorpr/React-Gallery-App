@@ -28,7 +28,7 @@ module.exports = React.createClass({
     },
     video: function () {
         return <div>
-            <video preload="auto" autoplay="autoplay" loop="loop" webkit-playsinline>
+            <video preload="auto" autoPlay="autoplay" loop="loop" webkit-playsinline>
                 <source src={this.props.mp4} type="video/mp4"></source>
             </video>
         </div>
